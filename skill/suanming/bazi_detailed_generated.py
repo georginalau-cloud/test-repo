@@ -5,10 +5,10 @@
 集合完整的八字排盘和五运深度分析
 
 调用链:
-bin/bazi → bazi_with_five_yun.py → src/bazi_analyzer.py → src/bazi_src/bazi.py
-                                        ↓
+bin/bazi → bazi_detailed_generated.py → core_analyzer.py → src/bazi_src/bazi.py
+                                                ↓
                                    src/cities_longitude.py（真太阳时）
-                                        ↓
+                                                ↓
                                    lib/five_yun_analyzer.py（五运分析）
 """
 
