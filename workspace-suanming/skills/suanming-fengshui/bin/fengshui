@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+风水分析入口（堪舆子）
+
+当前状态：纯知识型skill，无需Python入口脚本
+所有分析直接通过SKILL.md中的知识体系输出
+
+如需扩展飞星盘计算等功能，可在此添加。
+"""
+
+import sys
+
+print("""
+风水skill（堪舆子）· 入口
+
+当前版本：纯知识型，无Python入口脚本
+
+使用方式：
+  直接通过对话触发，触发词包括：
+  「风水」「堪舆」「看房」「看宅」「择日」「八宅」
+  「飞星」「旺位」「煞气」「化解」「命卦」「朝向」等
+
+参考文件：
+  - SKILL.md（堪舆子人物设定 + 完整知识体系）
+  - references/feixing.md（玄空飞星速查）
+  - references/wuxing-ganzhi.md（五行干支速查）
+  - references/zeri.md（择日神煞速查）
+  - examples/yangzhai.md（阳宅分析示例）
+  - examples/zeri-example.md（择日示例）
+""")

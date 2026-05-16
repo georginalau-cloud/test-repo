@@ -1,0 +1,1159 @@
+{
+  "update_time": "2026-05-15 21:00",
+  "top_funds": [
+    "163402",
+    "006113",
+    "519069",
+    "166002",
+    "000979",
+    "006751",
+    "004477",
+    "001371",
+    "166005",
+    "160706",
+    "001668",
+    "118001",
+    "004965",
+    "450009"
+  ],
+  "fund_holdings": {
+    "163402": {
+      "name": "兴全趋势投资混合(LOF)",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "688041",
+          "name": "海光信息",
+          "percent": 7.44,
+          "market_value": 4576400.0
+        },
+        {
+          "code": "300750",
+          "name": "宁德时代",
+          "percent": 6.89,
+          "market_value": 2219200.0
+        },
+        {
+          "code": "002475",
+          "name": "立讯精密",
+          "percent": 5.47,
+          "market_value": 14356500.0
+        },
+        {
+          "code": "600522",
+          "name": "中天科技",
+          "percent": 3.69,
+          "market_value": 15870300.0
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "percent": 3.45,
+          "market_value": 13646600.0
+        },
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "percent": 2.96,
+          "market_value": 857300.0
+        },
+        {
+          "code": "688002",
+          "name": "睿创微纳",
+          "percent": 2.95,
+          "market_value": 3772600.0
+        },
+        {
+          "code": "002250",
+          "name": "联化科技",
+          "percent": 2.85,
+          "market_value": 22252399.999999996
+        },
+        {
+          "code": "600584",
+          "name": "长电科技",
+          "percent": 2.83,
+          "market_value": 9450000.0
+        },
+        {
+          "code": "688003",
+          "name": "天准科技",
+          "percent": 2.76,
+          "market_value": 6135000.0
+        }
+      ]
+    },
+    "006113": {
+      "name": "汇添富创新医药混合A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "006990",
+          "name": "科伦博泰生物",
+          "percent": 9.71,
+          "market_value": 2899200.0
+        },
+        {
+          "code": "001801",
+          "name": "信达生物",
+          "percent": 9.69,
+          "market_value": 15679500.0
+        },
+        {
+          "code": "600276",
+          "name": "恒瑞医药",
+          "percent": 9.54,
+          "market_value": 20950600.0
+        },
+        {
+          "code": "001530",
+          "name": "三生制药",
+          "percent": 9.36,
+          "market_value": 56792000.0
+        },
+        {
+          "code": "001093",
+          "name": "石药集团",
+          "percent": 8.42,
+          "market_value": 127114000.0
+        },
+        {
+          "code": "002653",
+          "name": "海思科",
+          "percent": 7.63,
+          "market_value": 17053500.0
+        },
+        {
+          "code": "688506",
+          "name": "百利天恒",
+          "percent": 6.71,
+          "market_value": 2927200.0000000005
+        },
+        {
+          "code": "688266",
+          "name": "泽璟制药",
+          "percent": 5.35,
+          "market_value": 6563099.999999999
+        },
+        {
+          "code": "002294",
+          "name": "信立泰",
+          "percent": 4.01,
+          "market_value": 7937400.0
+        },
+        {
+          "code": "688331",
+          "name": "荣昌生物",
+          "percent": 1.95,
+          "market_value": 1836000.0
+        },
+        {
+          "code": "009995",
+          "name": "荣昌生物",
+          "percent": 0.96,
+          "market_value": 1381000.0
+        }
+      ]
+    },
+    "519069": {
+      "name": "汇添富价值精选混合",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300750",
+          "name": "宁德时代",
+          "percent": 6.8,
+          "market_value": 1298500.0
+        },
+        {
+          "code": "000425",
+          "name": "徐工机械",
+          "percent": 5.68,
+          "market_value": 43226899.99999999
+        },
+        {
+          "code": "000338",
+          "name": "潍柴动力",
+          "percent": 5.02,
+          "market_value": 15873500.0
+        },
+        {
+          "code": "600519",
+          "name": "贵州茅台",
+          "percent": 4.98,
+          "market_value": 263500.0
+        },
+        {
+          "code": "600036",
+          "name": "招商银行",
+          "percent": 4.94,
+          "market_value": 9634000.0
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "percent": 4.92,
+          "market_value": 11527900.0
+        },
+        {
+          "code": "601318",
+          "name": "中国平安",
+          "percent": 4.76,
+          "market_value": 6436100.0
+        },
+        {
+          "code": "002475",
+          "name": "立讯精密",
+          "percent": 4.67,
+          "market_value": 7269100.0
+        },
+        {
+          "code": "600233",
+          "name": "圆通速递",
+          "percent": 4.38,
+          "market_value": 16677700.0
+        },
+        {
+          "code": "600919",
+          "name": "江苏银行",
+          "percent": 4.24,
+          "market_value": 29751800.0
+        }
+      ]
+    },
+    "166002": {
+      "name": "中欧新蓝筹混合A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "percent": 7.71,
+          "market_value": 1334900.0
+        },
+        {
+          "code": "600309",
+          "name": "万华化学",
+          "percent": 5.6,
+          "market_value": 6950400.0
+        },
+        {
+          "code": "600487",
+          "name": "亨通光电",
+          "percent": 4.15,
+          "market_value": 7771400.0
+        },
+        {
+          "code": "000807",
+          "name": "云铝股份",
+          "percent": 3.5,
+          "market_value": 11125000.0
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "percent": 3.46,
+          "market_value": 771500.0
+        },
+        {
+          "code": "601318",
+          "name": "中国平安",
+          "percent": 2.69,
+          "market_value": 4676300.0
+        },
+        {
+          "code": "000426",
+          "name": "兴业银锡",
+          "percent": 2.44,
+          "market_value": 5993900.0
+        },
+        {
+          "code": "603259",
+          "name": "药明康德",
+          "percent": 2.39,
+          "market_value": 2398700.0
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升",
+          "percent": 2.15,
+          "market_value": 5859500.0
+        },
+        {
+          "code": "601600",
+          "name": "中国铝业",
+          "percent": 2.0,
+          "market_value": 17315500.0
+        }
+      ]
+    },
+    "000979": {
+      "name": "景顺长城沪港深精选股票A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "percent": 9.25,
+          "market_value": 1398100.0
+        },
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "percent": 9.01,
+          "market_value": 1058700.0
+        },
+        {
+          "code": "002899",
+          "name": "紫金矿业",
+          "percent": 7.75,
+          "market_value": 17098000.0
+        },
+        {
+          "code": "601138",
+          "name": "工业富联",
+          "percent": 5.5,
+          "market_value": 7146400.0
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "percent": 5.38,
+          "market_value": 1192300.0
+        },
+        {
+          "code": "300476",
+          "name": "胜宏科技",
+          "percent": 5.11,
+          "market_value": 1362300.0
+        },
+        {
+          "code": "000700",
+          "name": "腾讯控股",
+          "percent": 4.98,
+          "market_value": 779300.0000000001
+        },
+        {
+          "code": "002463",
+          "name": "沪电股份",
+          "percent": 4.78,
+          "market_value": 4212200.0
+        },
+        {
+          "code": "688195",
+          "name": "腾景科技",
+          "percent": 4.49,
+          "market_value": 1110300.0
+        },
+        {
+          "code": "688498",
+          "name": "源杰科技",
+          "percent": 4.17,
+          "market_value": 277600.0
+        }
+      ]
+    },
+    "006751": {
+      "name": "富国互联科技股票A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "percent": 9.49,
+          "market_value": 672200.0
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "percent": 9.39,
+          "market_value": 855300.0
+        },
+        {
+          "code": "006869",
+          "name": "长飞光纤光缆",
+          "percent": 8.72,
+          "market_value": 2176800.0
+        },
+        {
+          "code": "002463",
+          "name": "沪电股份",
+          "percent": 7.63,
+          "market_value": 4053800.0
+        },
+        {
+          "code": "002384",
+          "name": "东山精密",
+          "percent": 6.71,
+          "market_value": 2620299.9999999995
+        },
+        {
+          "code": "002916",
+          "name": "深南电路",
+          "percent": 5.53,
+          "market_value": 1015699.9999999999
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "percent": 5.39,
+          "market_value": 721300.0
+        },
+        {
+          "code": "688019",
+          "name": "安集科技",
+          "percent": 4.48,
+          "market_value": 720200.0
+        },
+        {
+          "code": "603929",
+          "name": "亚翔集成",
+          "percent": 3.36,
+          "market_value": 752400.0
+        },
+        {
+          "code": "603308",
+          "name": "应流股份",
+          "percent": 3.23,
+          "market_value": 2111300.0
+        }
+      ]
+    },
+    "004477": {
+      "name": "嘉实沪港深回报混合",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "000883",
+          "name": "中国海洋石油",
+          "percent": 6.11,
+          "market_value": 1490000.0
+        },
+        {
+          "code": "000175",
+          "name": "吉利汽车",
+          "percent": 5.77,
+          "market_value": 1882000.0
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升",
+          "percent": 5.44,
+          "market_value": 906200.0
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "percent": 5.16,
+          "market_value": 951100.0
+        },
+        {
+          "code": "601225",
+          "name": "陕西煤业",
+          "percent": 4.87,
+          "market_value": 1146800.0
+        },
+        {
+          "code": "601601",
+          "name": "中国太保",
+          "percent": 4.73,
+          "market_value": 767900.0000000001
+        },
+        {
+          "code": "002331",
+          "name": "李宁",
+          "percent": 4.56,
+          "market_value": 1456000.0
+        },
+        {
+          "code": "000807",
+          "name": "云铝股份",
+          "percent": 4.08,
+          "market_value": 793600.0
+        },
+        {
+          "code": "603699",
+          "name": "纽威股份",
+          "percent": 3.96,
+          "market_value": 494099.99999999994
+        },
+        {
+          "code": "601233",
+          "name": "桐昆股份",
+          "percent": 3.91,
+          "market_value": 1305600.0
+        }
+      ]
+    },
+    "001371": {
+      "name": "富国沪港深价值混合A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "000700",
+          "name": "腾讯控股",
+          "percent": 8.22,
+          "market_value": 319400.0
+        },
+        {
+          "code": "000857",
+          "name": "中国石油股份",
+          "percent": 6.4,
+          "market_value": 11196000.0
+        },
+        {
+          "code": "009988",
+          "name": "阿里巴巴-W",
+          "percent": 6.05,
+          "market_value": 955800.0
+        },
+        {
+          "code": "001299",
+          "name": "友邦保险",
+          "percent": 4.92,
+          "market_value": 1089200.0
+        },
+        {
+          "code": "002888",
+          "name": "渣打集团",
+          "percent": 4.11,
+          "market_value": 482900.0
+        },
+        {
+          "code": "001818",
+          "name": "招金矿业",
+          "percent": 4.03,
+          "market_value": 2389500.0
+        },
+        {
+          "code": "000939",
+          "name": "建设银行",
+          "percent": 4.02,
+          "market_value": 8994000.0
+        },
+        {
+          "code": "000883",
+          "name": "中国海洋石油",
+          "percent": 3.09,
+          "market_value": 2075000.0
+        },
+        {
+          "code": "001339",
+          "name": "中国人民保险集团",
+          "percent": 2.78,
+          "market_value": 9685000.0
+        },
+        {
+          "code": "002328",
+          "name": "中国财险",
+          "percent": 2.28,
+          "market_value": 3010000.0
+        }
+      ]
+    },
+    "166005": {
+      "name": "中欧价值发现混合A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300750",
+          "name": "宁德时代",
+          "percent": 3.83,
+          "market_value": 269100.0
+        },
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "percent": 3.6,
+          "market_value": 178700.0
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "percent": 3.5,
+          "market_value": 3025100.0
+        },
+        {
+          "code": "600938",
+          "name": "中国海油",
+          "percent": 3.39,
+          "market_value": 2397900.0
+        },
+        {
+          "code": "601077",
+          "name": "渝农商行",
+          "percent": 3.33,
+          "market_value": 13355300.0
+        },
+        {
+          "code": "601872",
+          "name": "招商轮船",
+          "percent": 3.25,
+          "market_value": 5616799.999999999
+        },
+        {
+          "code": "300677",
+          "name": "英科医疗",
+          "percent": 3.08,
+          "market_value": 1483899.9999999998
+        },
+        {
+          "code": "002142",
+          "name": "宁波银行",
+          "percent": 3.04,
+          "market_value": 2823100.0
+        },
+        {
+          "code": "000333",
+          "name": "美的集团",
+          "percent": 3.0,
+          "market_value": 1110900.0
+        },
+        {
+          "code": "601869",
+          "name": "长飞光纤",
+          "percent": 2.94,
+          "market_value": 268500.0
+        }
+      ]
+    },
+    "160706": {
+      "name": "嘉实沪深300ETF联接A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "300750",
+          "name": "宁德时代",
+          "percent": 0.1,
+          "market_value": 19400.0
+        },
+        {
+          "code": "600519",
+          "name": "贵州茅台",
+          "percent": 0.09,
+          "market_value": 4600.0
+        },
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "percent": 0.06,
+          "market_value": 8200.0
+        },
+        {
+          "code": "601318",
+          "name": "中国平安",
+          "percent": 0.06,
+          "market_value": 78100.0
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "percent": 0.05,
+          "market_value": 120700.0
+        },
+        {
+          "code": "600036",
+          "name": "招商银行",
+          "percent": 0.05,
+          "market_value": 90700.0
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "percent": 0.04,
+          "market_value": 7300.0
+        },
+        {
+          "code": "000333",
+          "name": "美的集团",
+          "percent": 0.04,
+          "market_value": 36100.0
+        },
+        {
+          "code": "600900",
+          "name": "长江电力",
+          "percent": 0.03,
+          "market_value": 89700.0
+        },
+        {
+          "code": "601166",
+          "name": "兴业银行",
+          "percent": 0.03,
+          "market_value": 124100.0
+        }
+      ]
+    },
+    "001668": {
+      "name": "汇添富全球移动互联混合(QDII)人民币A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "00NVDA",
+          "name": "英伟达",
+          "percent": 8.96,
+          "market_value": 145800.0
+        },
+        {
+          "code": "0GOOGL",
+          "name": "谷歌-A",
+          "percent": 8.14,
+          "market_value": 80300.0
+        },
+        {
+          "code": "00MSFT",
+          "name": "微软",
+          "percent": 5.0,
+          "market_value": 38400.0
+        },
+        {
+          "code": "00AMZN",
+          "name": "亚马逊",
+          "percent": 4.84,
+          "market_value": 65900.0
+        },
+        {
+          "code": "00AAPL",
+          "name": "苹果",
+          "percent": 4.45,
+          "market_value": 49700.0
+        },
+        {
+          "code": "00AVGO",
+          "name": "博通",
+          "percent": 3.89,
+          "market_value": 35700.0
+        },
+        {
+          "code": "00META",
+          "name": "Meta Platforms Inc-A",
+          "percent": 3.48,
+          "market_value": 17300.0
+        },
+        {
+          "code": "000TSM",
+          "name": "台积电",
+          "percent": 3.34,
+          "market_value": 28100.0
+        },
+        {
+          "code": "00NFLX",
+          "name": "奈飞",
+          "percent": 2.36,
+          "market_value": 69500.0
+        },
+        {
+          "code": "0000MU",
+          "name": "美光科技",
+          "percent": 2.21,
+          "market_value": 18600.0
+        }
+      ]
+    },
+    "118001": {
+      "name": "易方达亚洲精选股票",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "001179",
+          "name": "华住集团-S",
+          "percent": 9.81,
+          "market_value": 9000000.0
+        },
+        {
+          "code": "000883",
+          "name": "中国海洋石油",
+          "percent": 9.48,
+          "market_value": 12150000.0
+        },
+        {
+          "code": "005930",
+          "name": "三星电子",
+          "percent": 9.18,
+          "market_value": 385000.0
+        },
+        {
+          "code": "000700",
+          "name": "腾讯控股",
+          "percent": 8.77,
+          "market_value": 650000.0
+        },
+        {
+          "code": "0GOOGL",
+          "name": "谷歌-A",
+          "percent": 8.41,
+          "market_value": 134000.0
+        },
+        {
+          "code": "00FUTU",
+          "name": "富途控股",
+          "percent": 7.65,
+          "market_value": 256000.0
+        },
+        {
+          "code": "000660",
+          "name": "SK海力士",
+          "percent": 7.59,
+          "market_value": 66000.0
+        },
+        {
+          "code": "009988",
+          "name": "阿里巴巴-W",
+          "percent": 7.13,
+          "market_value": 2150000.0
+        },
+        {
+          "code": "000TSM",
+          "name": "台积电",
+          "percent": 6.79,
+          "market_value": 92000.0
+        },
+        {
+          "code": "00ASML",
+          "name": "阿斯麦",
+          "percent": 5.19,
+          "market_value": 18000.0
+        },
+        {
+          "code": "002330",
+          "name": "台积电",
+          "percent": 3.31,
+          "market_value": 275000.0
+        }
+      ]
+    },
+    "004965": {
+      "name": "泓德致远混合A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "603345",
+          "name": "安井食品",
+          "percent": 3.93,
+          "market_value": 271300.0
+        },
+        {
+          "code": "601369",
+          "name": "陕鼓动力",
+          "percent": 3.6,
+          "market_value": 2301200.0
+        },
+        {
+          "code": "002352",
+          "name": "顺丰控股",
+          "percent": 3.0,
+          "market_value": 508300.0
+        },
+        {
+          "code": "600795",
+          "name": "国电电力",
+          "percent": 2.76,
+          "market_value": 3662900.0
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升",
+          "percent": 1.8,
+          "market_value": 319500.0
+        },
+        {
+          "code": "600519",
+          "name": "贵州茅台",
+          "percent": 1.78,
+          "market_value": 7900.0
+        },
+        {
+          "code": "601985",
+          "name": "中国核电",
+          "percent": 1.74,
+          "market_value": 1237900.0
+        },
+        {
+          "code": "600690",
+          "name": "海尔智家",
+          "percent": 1.72,
+          "market_value": 518400.00000000006
+        },
+        {
+          "code": "601816",
+          "name": "京沪高铁",
+          "percent": 1.66,
+          "market_value": 2105000.0
+        },
+        {
+          "code": "603596",
+          "name": "伯特利",
+          "percent": 1.37,
+          "market_value": 200799.99999999997
+        }
+      ]
+    },
+    "450009": {
+      "name": "国富中小盘股票A",
+      "total_market_value": 0,
+      "holdings": [
+        {
+          "code": "601577",
+          "name": "长沙银行",
+          "percent": 7.78,
+          "market_value": 18054100.0
+        },
+        {
+          "code": "600016",
+          "name": "民生银行",
+          "percent": 7.32,
+          "market_value": 43158600.0
+        },
+        {
+          "code": "601128",
+          "name": "常熟银行",
+          "percent": 6.64,
+          "market_value": 20779899.999999996
+        },
+        {
+          "code": "002035",
+          "name": "华帝股份",
+          "percent": 6.09,
+          "market_value": 20298600.0
+        },
+        {
+          "code": "601665",
+          "name": "齐鲁银行",
+          "percent": 5.16,
+          "market_value": 20009900.0
+        },
+        {
+          "code": "002568",
+          "name": "百润股份",
+          "percent": 4.73,
+          "market_value": 6233099.999999999
+        },
+        {
+          "code": "600048",
+          "name": "保利发展",
+          "percent": 3.63,
+          "market_value": 13919800.0
+        },
+        {
+          "code": "000683",
+          "name": "博源化工",
+          "percent": 3.42,
+          "market_value": 9099900.0
+        },
+        {
+          "code": "601155",
+          "name": "新城控股",
+          "percent": 3.13,
+          "market_value": 4991300.0
+        },
+        {
+          "code": "001979",
+          "name": "招商蛇口",
+          "percent": 3.09,
+          "market_value": 8200000.0
+        }
+      ]
+    }
+  },
+  "all_codes": [
+    "0000MU",
+    "000175",
+    "000333",
+    "000338",
+    "000425",
+    "000426",
+    "000660",
+    "000683",
+    "000700",
+    "000807",
+    "000857",
+    "000883",
+    "000939",
+    "000TSM",
+    "001093",
+    "001179",
+    "001299",
+    "001339",
+    "001530",
+    "001801",
+    "001818",
+    "001979",
+    "002035",
+    "002142",
+    "002250",
+    "002294",
+    "002328",
+    "002330",
+    "002331",
+    "002352",
+    "002371",
+    "002384",
+    "002463",
+    "002475",
+    "002568",
+    "002653",
+    "002888",
+    "002899",
+    "002916",
+    "005930",
+    "006869",
+    "006990",
+    "009988",
+    "009995",
+    "00AAPL",
+    "00AMZN",
+    "00ASML",
+    "00AVGO",
+    "00FUTU",
+    "00META",
+    "00MSFT",
+    "00NFLX",
+    "00NVDA",
+    "0GOOGL",
+    "300308",
+    "300394",
+    "300476",
+    "300502",
+    "300677",
+    "300750",
+    "600016",
+    "600036",
+    "600048",
+    "600233",
+    "600276",
+    "600309",
+    "600426",
+    "600487",
+    "600519",
+    "600522",
+    "600584",
+    "600690",
+    "600795",
+    "600900",
+    "600919",
+    "600938",
+    "601077",
+    "601128",
+    "601138",
+    "601155",
+    "601166",
+    "601225",
+    "601233",
+    "601318",
+    "601369",
+    "601577",
+    "601600",
+    "601601",
+    "601665",
+    "601816",
+    "601869",
+    "601872",
+    "601899",
+    "601985",
+    "603259",
+    "603308",
+    "603345",
+    "603596",
+    "603699",
+    "603929",
+    "688002",
+    "688003",
+    "688019",
+    "688041",
+    "688195",
+    "688266",
+    "688331",
+    "688498",
+    "688506"
+  ],
+  "total_stocks": 109,
+  "overlap": {
+    "300750": [
+      "163402",
+      "519069",
+      "166005",
+      "160706"
+    ],
+    "002475": [
+      "163402",
+      "519069"
+    ],
+    "601899": [
+      "163402",
+      "519069",
+      "004477",
+      "166005",
+      "160706"
+    ],
+    "600519": [
+      "519069",
+      "160706",
+      "004965"
+    ],
+    "600036": [
+      "519069",
+      "160706"
+    ],
+    "601318": [
+      "519069",
+      "166002",
+      "160706"
+    ],
+    "300308": [
+      "166002",
+      "000979",
+      "006751",
+      "166005",
+      "160706"
+    ],
+    "000807": [
+      "166002",
+      "004477"
+    ],
+    "300502": [
+      "166002",
+      "000979",
+      "006751",
+      "160706"
+    ],
+    "600426": [
+      "166002",
+      "004477",
+      "004965"
+    ],
+    "300394": [
+      "000979",
+      "006751"
+    ],
+    "000700": [
+      "000979",
+      "001371",
+      "118001"
+    ],
+    "002463": [
+      "000979",
+      "006751"
+    ],
+    "000883": [
+      "004477",
+      "001371",
+      "118001"
+    ],
+    "009988": [
+      "001371",
+      "118001"
+    ],
+    "000333": [
+      "166005",
+      "160706"
+    ],
+    "0GOOGL": [
+      "001668",
+      "118001"
+    ],
+    "000TSM": [
+      "001668",
+      "118001"
+    ]
+  },
+  "overlap_count": 18
+}

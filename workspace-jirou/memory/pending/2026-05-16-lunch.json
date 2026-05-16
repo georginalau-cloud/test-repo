@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "date": "2026-05-16",
+  "meal_type": "lunch",
+  "items": [
+    {"name": "蔬菜炖汤（含西兰花、白萝卜、绿叶菜、银耳）", "weight_g": 500, "calories": 100, "estimated": true},
+    {"name": "洋葱炒牛肉", "weight_g": 300, "calories": 750, "estimated": true},
+    {"name": "腌萝卜", "weight_g": 50, "calories": 20, "estimated": true}
+  ],
+  "total_calories": 870,
+  "note": "中饭+晚饭合并，300g牛肉"
+}

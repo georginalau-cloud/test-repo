@@ -1,0 +1,256 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+紫微斗数完整分析入口
+调用：python3 bin/ziwei --year 1990 --month 1 --day 8 --hour 14 --minute 54 --gender female --city 上海 --mode full
+
+输出结构化数据 + prompt_for_llm，供 LLM 做命盘解读
+"""
+
+import os
+import sys
+import json
+import argparse
+
+_SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(_SKILL_DIR, 'vendor'))
+
+from iztro_py import astro
+
+# ─── 星辰中英对照 ───────────────────────────────────────────────
+MAJOR_STAR_CN = {
+    'jumenMaj': '巨门', 'tiantongMaj': '天同', 'tianliangMaj': '天梁',
+    'tianfuMaj': '天府', 'taiyinMaj': '太阴', 'lianzhenMaj': '廉贞',
+    'tanlangMaj': '贪狼', 'ziweiMaj': '紫微', 'wuquMaj': '武曲',
+    'qishaMaj': '七杀', 'taiyangMaj': '太阳', 'tianjiMaj': '天机',
+    'pojunMaj': '破军', 'tianxiangMaj': '天相',
+}
+MINOR_STAR_CN = {
+    'zuofuMin': '左辅', 'youbiMin': '右弼', 'tiankuiMin': '天魁',
+    'tianyueMin': '天钺', 'wenquMin': '文曲', 'wenchangMin': '文昌',
+    'luquMin': '禄存', 'qingyangMin': '青羊', 'huoxingMin': '火星',
+    'lingxingMin': '铃星', 'tuoluoMin': '陀罗', 'pojunMin': '破军',
+    'tianmaMin': '天马', 'dijieMin': '地劫', 'lucunMin': '禄存',
+    'dikongMin': '地空',
+}
+ADJECTIVE_STAR_CN = {
+    'xianchi': '咸池', 'jieshen': '解神', 'tiankong': '天空',
+    'taohua': '桃花', 'hongmao': '红鸾', 'bazuo': '芭蕉',
+    'enguang': '恩光', 'feilian': '飞廉', 'fenggao': '风羔',
+    'fengge': '凤阁', 'guasu': '挂索', 'guchen': '孤辰',
+    'hongluan': '红鸾', 'huagai': '华盖', 'jielu': '劫路',
+    'kongwang': '空亡', 'longchi': '龙池', 'nianjie': '年解',
+    'posui': '破岁', 'santai': '三台', 'taifu': '台辅',
+    'tiancai': '天才', 'tianchu': '天厨', 'tiande': '天德',
+    'tianfuAdj': '天福', 'tianguan': '天关', 'tiangui': '天贵',
+    'tianku': '天苦', 'tianshang': '天上', 'tianshi': '天寿',
+    'tianshou': '天寿', 'tianwu': '天武', 'tianxi': '天熙',
+    'tianxing': '天星', 'tianxu': '天虚', 'tianyao': '天姚',
+    'yinsha': '寅煞', 'yuede': '月德', 'xunkong': '旬空',
+}
+
+# 宫位中英对照
+PALACE_CN = {
+    'wealthPalace': '财帛宫', 'childrenPalace': '子女宫',
+    'spousePalace': '夫妻宫', 'siblingsPalace': '兄弟宫',
+    'soulPalace': '命宫', 'parentsPalace': '父母宫',
+    'spiritPalace': '身宫', 'propertyPalace': '田宅宫',
+    'careerPalace': '官禄宫', 'friendsPalace': '交友宫',
+    'surfacePalace': '迁移宫', 'healthPalace': '疾厄宫',
+}
+
+# 宫位英文→中文简称
+PALACE_SHORT_CN = {
+    'wealthPalace': '财', 'childrenPalace': '子',
+    'spousePalace': '夫', 'siblingsPalace': '兄',
+    'soulPalace': '命', 'parentsPalace': '父',
+    'spiritPalace': '身', 'propertyPalace': '田',
+    'careerPalace': '官', 'friendsPalace': '友',
+    'surfacePalace': '迁', 'healthPalace': '疾',
+}
+
+BRIGHTNESS_CN = {
+    '庙': '庙（旺）', '旺': '旺', '得': '得', '地': '地',
+    '陷': '陷（弱）', '弱': '弱', '不得': '不得', '平': '平',
+    None: '',
+}
+
+
+def hour_to_time_index(hour):
+    """24小时制 → iztro时辰索引"""
+    maps = [(0,0),(1,1),(2,1),(3,2),(4,2),(5,3),(6,3),(7,4),
+            (8,4),(9,5),(10,5),(11,6),(12,6),(13,7),(14,7),
+            (15,8),(16,8),(17,9),(18,9),(19,10),(20,10),(21,11),(22,11),(23,12)]
+    for h, idx in maps:
+        if hour == h:
+            return idx
+    return 0
+
+
+def calc_ming_gua_male(year):
+    s = (year % 100) // 10 + (year % 100) % 10
+    while s > 9: s = s // 10 + s % 10
+    return 10 - s
+
+
+def calc_ming_gua_female(year):
+    s = (year % 100) // 10 + (year % 100) % 10
+    while s > 9: s = s // 10 + s % 10
+    r = 5 + s
+    while r > 9: r -= 9
+    return r
+
+
+def star_cn(name):
+    return MAJOR_STAR_CN.get(name) or MINOR_STAR_CN.get(name) or ADJECTIVE_STAR_CN.get(name) or name
+
+
+def brightness_cn(b):
+    return BRIGHTNESS_CN.get(b, b or '')
+
+
+def build_palace_report(p):
+    """生成单宫可读报告"""
+    d = p.model_dump()
+    name_en = d.get('name', '')
+    name_cn = PALACE_CN.get(name_en, name_en)
+    short_cn = PALACE_SHORT_CN.get(name_en, name_en)
+
+    major = [star_cn(s['name']) + brightness_cn(s.get('brightness')) for s in d.get('major_stars', [])]
+    minor = [star_cn(s['name']) for s in d.get('minor_stars', [])]
+    adj   = [star_cn(s['name']) for s in d.get('adjective_stars', [])]
+
+    return {
+        'name_en': name_en,
+        'name_cn': name_cn,
+        'short_cn': short_cn,
+        'major_stars': major,
+        'minor_stars': minor,
+        'adjective_stars': adj,
+        'changsheng12': d.get('changsheng12', ''),
+        'boshi12': d.get('boshi12', ''),
+        'jiangqian12': d.get('jiangqian12', ''),
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser(description='紫微斗数排盘分析')
+    parser.add_argument('--year',   type=int, required=True)
+    parser.add_argument('--month',  type=int, required=True)
+    parser.add_argument('--day',    type=int, required=True)
+    parser.add_argument('--hour',   type=int, required=True)
+    parser.add_argument('--minute', type=int, default=0)
+    parser.add_argument('--gender', type=str, required=True, choices=['male', 'female'])
+    parser.add_argument('--city',   type=str, default='')
+    parser.add_argument('--mode',   type=str, default='full', choices=['full', 'quick'])
+    args = parser.parse_args()
+
+    gender_cn = '男' if args.gender == 'male' else '女'
+    time_idx = hour_to_time_index(args.hour)
+
+    chart = astro.by_solar(
+        f'{args.year}-{args.month}-{args.day}', time_idx, gender_cn,
+        fix_leap=True, language='zh-CN'
+    )
+
+    ming_gua = calc_ming_gua_male(args.year) if args.gender == 'male' else calc_ming_gua_female(args.year)
+    gua_map = {1:'坎',2:'坤',3:'震',4:'巽',5:'坤',6:'乾',7:'兑',8:'艮',9:'离'}
+    gua_type = {'坎':'东四命','离':'东四命','震':'东四命','巽':'东四命',
+                '乾':'西四命','坤':'西四命','艮':'西四命','兑':'西四命'}
+    gua_name = gua_map.get(ming_gua, '?')
+    gua_type_str = gua_type.get(gua_name, '?')
+
+    palaces_report = [build_palace_report(p) for p in chart.palaces]
+
+    # 找到命宫和身宫
+    soul_idx = next((i for i, p in enumerate(chart.palaces) if p.name == 'soulPalace'), -1)
+    body_idx = next((i for i, p in enumerate(chart.palaces) if p.name == 'spiritPalace'), -1)
+
+    result = {
+        'success': True,
+        'meta': {
+            'solar_date': chart.solar_date,
+            'lunar_date': chart.lunar_date,
+            'chinese_date': chart.chinese_date,
+            'gender': gender_cn,
+            'time': chart.time,
+            'time_range': chart.time_range,
+            'zodiac': chart.zodiac,
+            'sign': chart.sign,
+            'five_elements_class': chart.five_elements_class,
+        },
+        'ming_gua': {
+            'number': ming_gua,
+            'name': gua_name,
+            'type': gua_type_str,
+        },
+        'palaces': palaces_report,
+        'soul_palace_index': soul_idx,
+        'body_palace_index': body_idx,
+    }
+
+    # 生成 LLM prompt
+    prompt = _build_prompt(result)
+    result['prompt_for_llm'] = prompt
+
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+def _build_prompt(data):
+    """生成紫微斗数命盘解读 prompt"""
+    meta = data['meta']
+    ming = data['ming_gua']
+    palaces = data['palaces']
+
+    # 命宫、身宫
+    soul_p = palaces[data['soul_palace_index']]
+    body_p = palaces[data['body_palace_index']]
+
+    # 列出十二宫星曜
+    palace_lines = []
+    for i, p in enumerate(palaces):
+        stars_str = '、'.join(p['major_stars']) if p['major_stars'] else '无主星'
+        if p['minor_stars']:
+            stars_str += ' + ' + '、'.join(p['minor_stars'])
+        if p['adjective_stars']:
+            stars_str += ' [' + '、'.join(p['adjective_stars']) + ']'
+        palace_lines.append(f"{i+1}. {p['name_cn']}：{stars_str}")
+
+    p_text = '\n'.join(palace_lines)
+
+    prompt = f"""你是紫微斗数命理师，请为以下命盘做详细解读。
+
+【命主基本信息】
+- 出生：{meta['solar_date']}（阳历）/ {meta['lunar_date']}（农历）
+- 四柱：{meta['chinese_date']}
+- 性别：{meta['gender']}
+- 出生时辰：{meta['time']}（{meta['time_range']}）
+- 生肖：{meta['zodiac']}  星座：{meta['sign']}
+- 五行局：{meta['five_elements_class']}
+- 命卦：{ming['name']}宫（{ming['type']}）
+
+【命宫】{soul_p['name_cn']}：{'、'.join(soul_p['major_stars'])} + {'、'.join(soul_p['minor_stars'])} + [{'、'.join(soul_p['adjective_stars'])}]
+【身宫】{body_p['name_cn']}：{'、'.join(body_p['major_stars'])} + {'、'.join(body_p['minor_stars'])} + [{'、'.join(body_p['adjective_stars'])}]
+
+【十二宫星曜分布】
+{p_text}
+
+【解读要求】
+请从以下维度进行分析（坤造视角）：
+1. 命宫（性格、命运走向）
+2. 事业宫（事业、地位、官禄）
+3. 财帛宫（财运、理财）
+4. 夫妻宫/感情（姻缘、感情模式）
+5. 迁移宫（外出运、人际、际遇）
+6. 疾厄宫（健康注意点）
+7. 田宅宫（家运、房产）
+
+每个维度给出：星曜组合解读 + 命理结论 + 具体建议
+语气亲切，像朋友间的命理分析，不要过于学术化。
+最后给出本月（癸巳月 5月5日-6月4日）的紫微斗数流月运势。
+"""
+    return prompt
+
+
+if __name__ == '__main__':
+    main()

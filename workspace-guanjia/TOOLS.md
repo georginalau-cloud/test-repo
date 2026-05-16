@@ -1,0 +1,123 @@
+# TOOLS.md - 工具配置
+
+_我的工具小抄本，记录当前配置和所有能力。_
+
+## 已安装的 Skills（available 目录，41个）
+
+| 技能 | 功能 | 状态 |
+|------|------|------|
+| feishu-doc | 飞书文档读写 | ✅ |
+| feishu-drive | 飞书云盘管理 | ✅ |
+| feishu-perm | 飞书权限管理 | ✅ |
+| feishu-wiki | 飞书知识库 | ✅ |
+| 1password | 1Password CLI | ⚠️ CLI未装 |
+| apple-notes | Apple Notes | ✅ |
+| apple-reminders | 提醒事项 | ✅ |
+| bear-notes | Bear 笔记 | ⚠️ CLI未装 |
+| camsnap | 摄像头截图 | ✅ |
+| canvas | Canvas 控制 | ✅ |
+| clawhub | 技能市场 | ✅ |
+| coding-agent | 编码任务代理 | ⚠️ Codex未装 |
+| discord | Discord 管理 | ⚠️ CLI未装 |
+| gemini | Gemini CLI | ✅ |
+| gh-issues | GitHub Issues 自动修复 | ✅ |
+| gifgrep | GIF 搜索 | ✅ |
+| github | GitHub 操作 | ✅ |
+| gog | Google Workspace | ⚠️ CLI未装 |
+| healthcheck | 安全审计 | ✅ |
+| himalaya | 邮件管理 | ✅ |
+| imsg | iMessage | ✅ |
+| mcporter | MCP 服务管理 | ⚠️ MCP未配 |
+| model-usage | 模型用量统计 | ✅ |
+| nano-pdf | PDF 编辑 | ✅ |
+| node-connect | 节点连接诊断 | ✅ |
+| notion | Notion 集成 | ⚠️ CLI未装 |
+| obsidian | Obsidian 知识库 | ✅ |
+| openai-image-gen | 图片生成 | ✅ |
+| openai-whisper | 本地语音转文字 | ✅ |
+| openai-whisper-api | API 语音转文字 | ✅ |
+| openclaw-skills-eastmoney-stock | 东方财富股票 | ✅ |
+| oracle | Prompt 工程化 | ⚠️ CLI未装 |
+| session-logs | 会话日志分析 | ✅ |
+| skill-creator | 技能创建 | ✅ |
+| slack | Slack 管理 | ⚠️ CLI未装 |
+| summarize | URL/音视频摘要 | ✅ |
+| things-mac | Things 3 任务 | ⚠️ CLI未装 |
+| tmux | 会话自动化 | ⚠️ CLI未装 |
+| trending-now | 趋势监控 | ✅ |
+| video-frames | 视频帧提取 | ✅ |
+| weather | 天气查询 | ✅ |
+| xurl | X (Twitter) API | ⚠️ CLI未装 |
+
+## Workspace Skills（workspace-guanjia/skills，9个）
+
+| 技能 | 功能 |
+|------|------|
+| feishu-calendar | 飞书日历 |
+| fliggy-flight-monitor | 飞猪机票监控 |
+| garmin-connect | Garmin 健康数据 |
+| isolated-chrome | 独立 Chrome |
+| news-summary | 新闻摘要 |
+| pdf-ocr | PDF 扫描件转 Word |
+| progress-reporter | 定时进度汇报 |
+| qveris | 动态工具搜索 |
+| trending-now | 趋势监控 |
+
+## 已归档 Skills（deprecated，16个）
+
+这些 skill 的 CLI 依赖未安装，或功能重复，已移至 `~/.openclaw/skills/deprecated/`：
+
+blogwatcher, blucli, eightctl, garmin-connect-cli, garmin-connect-cn, goplaces, nano-banana-pro, openhue, ordercli, peekaboo, songsee, sonoscli, spotify-player, trello, voice-call, wacli
+
+如需恢复，运行 `clawhub install <skill-name>`
+
+## API 配置
+
+- **阿里云**: AccessKey 已配置
+- **QVeris**: API Key 已配置
+- **飞书**: App ID/Secret 已配置
+
+## 摄像头
+
+（暂无配置）
+
+## SSH
+
+（暂无配置）
+
+## 飞书排错要点（from openclaw-feishu-multi-bot）
+
+**核心保命规则：**
+- `agentToAgent.enabled` 必须 `false`（否则子 Agent 全挂）
+- accountId 在 channels/bindings/agents 三处必须完全一致
+- 绑定类型必须是 `"route"`
+- 飞书应用必须发布，草稿状态静默丢消息
+
+**诊断命令：**
+```bash
+openclaw doctor                        # 全面体检
+openclaw gateway status                # gateway 运行状态
+openclaw logs --channel feishu        # 飞书通道日志
+openclaw agents list --bindings        # 查 agent 和绑定
+pkill -f openclaw && openclaw gateway restart  # 强制重启
+```
+
+**常见 7 个翻车点：**
+1. Gateway 启动失败 → 检查 binding type/JSON/duplicate accountId/appSecret
+2. Bot 不响应 → 检查应用发布状态/凭证/gateway/日志
+3. 消息发错 Agent → accountId 在 channels 和 bindings 不一致
+4. 子 Agent 孵化失败 → agentId 未加进 allowAgents
+5. agentToAgent 冲突 → enabled 设为 false
+6. Agent 注册了但 list 不到 → 检查 JSON 结构或杀进程重试
+
+## 小龙虾Workspace路径
+
+给弟弟们传技能时，复制到各自workspace的skills目录：
+
+- **招财 (zhaocai)**: `~/.openclaw/workspace-zhaocaimiao/skills/`
+- **算命 (suanming)**: `~/.openclaw/workspace-suanmingmiao/skills/`
+- **肌肉 (jirou)**: `~/.openclaw/workspace-jiroumiao/skills/`
+
+---
+
+这是我的工具箱，知道自己能干嘛。

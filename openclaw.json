@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.1",
+    "lastTouchedAt": "2026-05-10T04:14:17.851Z"
+  },
+  "auth": {
+    "profiles": {
+      "minimax:default": {
+        "provider": "minimax",
+        "mode": "api_key"
+      },
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key"
+      },
+      "google": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimax.chat/v1",
+        "api": "openai-completions",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        ]
+      },
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "${DEEPSEEK_API_KEY}",
+        "api": "openai-completions",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek V3"
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "DeepSeek R1"
+          }
+        ]
+      },
+      "google": {
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+        "apiKey": "${GOOGLE_API_KEY}",
+        "models": [
+          {
+            "id": "gemini-2.5-flash",
+            "name": "Gemini Flash"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": "minimax/MiniMax-M2.7",
+      "timeoutSeconds": 900,
+      "memorySearch": {
+        "enabled": false
+      },
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "50m"
+      },
+      "llm": {
+        "idleTimeoutSeconds": 300
+      }
+    },
+    "list": [
+      {
+        "id": "guanjia",
+        "name": "管家",
+        "workspace": "/Users/georginalau/.openclaw/workspace-guanjia",
+        "agentDir": "/Users/georginalau/.openclaw/agents/guanjia/agent",
+        "tools": {},
+        "groupChat": {
+          "mentionPatterns": [
+            "@管家",
+            "@guanjia",
+            "@管家喵"
+          ]
+        }
+      },
+      {
+        "id": "jirou",
+        "name": "肌肉",
+        "workspace": "/Users/georginalau/.openclaw/workspace-jirou",
+        "agentDir": "/Users/georginalau/.openclaw/agents/jirou/agent",
+        "tools": {},
+        "heartbeat": {
+          "every": "30m",
+          "target": "last",
+          "lightContext": true,
+          "isolatedSession": true,
+          "activeHours": {
+            "start": "07:00",
+            "end": "23:00",
+            "timezone": "Asia/Shanghai"
+          },
+          "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+        },
+        "groupChat": {
+          "mentionPatterns": [
+            "@肌肉",
+            "@jirou",
+            "@肌肉喵"
+          ]
+        }
+      },
+      {
+        "id": "suanming",
+        "name": "算命",
+        "workspace": "/Users/georginalau/.openclaw/workspace-suanming",
+        "agentDir": "/Users/georginalau/.openclaw/agents/suanming/agent",
+        "tools": {},
+        "groupChat": {
+          "mentionPatterns": [
+            "@算命",
+            "@suanming",
+            "@算命喵"
+          ]
+        }
+      },
+      {
+        "id": "zhaocai",
+        "name": "招财",
+        "workspace": "/Users/georginalau/.openclaw/workspace-zhaocai",
+        "agentDir": "/Users/georginalau/.openclaw/agents/zhaocai/agent",
+        "tools": {},
+        "heartbeat": {
+          "every": "1h",
+          "target": "last",
+          "lightContext": true,
+          "isolatedSession": true,
+          "activeHours": {
+            "start": "08:00",
+            "end": "17:00",
+            "timezone": "Asia/Shanghai"
+          },
+          "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+        },
+        "groupChat": {
+          "mentionPatterns": [
+            "@招财",
+            "@zhaocai",
+            "@招财喵"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave"
+      }
+    },
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "defaultAccount": "guanjia",
+      "reconnectInterval": 10000,
+      "accounts": {
+        "guanjia": {
+          "appId": "${FEISHU_GUANJIA_APP_ID}",
+          "appSecret": "${FEISHU_GUANJIA_APP_SECRET}"
+        },
+        "jirou": {
+          "appId": "${FEISHU_JIROU_APP_ID}",
+          "appSecret": "${FEISHU_JIROU_APP_SECRET}"
+        },
+        "suanming": {
+          "appId": "${FEISHU_SUANMING_APP_ID}",
+          "appSecret": "${FEISHU_SUANMING_APP_SECRET}"
+        },
+        "zhaocai": {
+          "appId": "${FEISHU_ZHAOCAI_APP_ID}",
+          "appSecret": "${FEISHU_ZHAOCAI_APP_SECRET}"
+        }
+      },
+      "requireMention": true,
+      "defaultAgent": "guanjia",
+      "groups": {
+        "*": {
+          "mentionMode": "agent",
+          "agents": {
+            "guanjia": {
+              "requireMention": false
+            },
+            "jirou": {
+              "requireMention": true
+            },
+            "suanming": {
+              "requireMention": true
+            },
+            "zhaocai": {
+              "requireMention": true
+            }
+          }
+        }
+      },
+      "groupPolicy": "open"
+    }
+  },
+  "bindings": [
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "suanming",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_f9095feb1adeb3f3997725460bcdd87d"
+        }
+      },
+      "agentId": "suanming"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "zhaocai",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_e47f62cad7fec339fba10ae6e1f5a3c9"
+        }
+      },
+      "agentId": "zhaocai"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "jirou",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_aaf284a8365c85e8b792bb77b9bc8d59"
+        }
+      },
+      "agentId": "jirou"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "guanjia",
+        "peer": {
+          "kind": "direct",
+          "id": "ou_e62c3623b382df683370c131baf8f4c8"
+        }
+      },
+      "agentId": "guanjia"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "guanjia",
+        "peer": {
+          "kind": "group",
+          "id": "oc_df6664670afc7fa44e7a4b38b87f471a"
+        }
+      },
+      "agentId": "guanjia"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "jirou",
+        "peer": {
+          "kind": "group",
+          "id": "oc_df6664670afc7fa44e7a4b38b87f471a"
+        }
+      },
+      "agentId": "jirou"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "suanming",
+        "peer": {
+          "kind": "group",
+          "id": "oc_df6664670afc7fa44e7a4b38b87f471a"
+        }
+      },
+      "agentId": "suanming"
+    },
+    {
+      "match": {
+        "channel": "feishu",
+        "accountId": "zhaocai",
+        "peer": {
+          "kind": "group",
+          "id": "oc_df6664670afc7fa44e7a4b38b87f471a"
+        }
+      },
+      "agentId": "zhaocai"
+    }
+  ],
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true,
+        "config": {}
+      },
+      "minimax": {
+        "enabled": true
+      },
+      "brave": {
+        "config": {
+          "webSearch": {
+            "apiKey": "BSAmGZwjRxNkBAf95WR2r57UndSNVr0"
+          }
+        },
+        "enabled": true
+      },
+      "microsoft": {
+        "enabled": true
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "69259f801eae1cb77caa8ccc9499165ba1debe3059b2b533"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-07T09:34:46.538Z",
+    "lastRunVersion": "2026.4.1",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "messages": {
+    "tts": {
+      "auto": "off",
+      "provider": "microsoft"
+    }
+  }
+}

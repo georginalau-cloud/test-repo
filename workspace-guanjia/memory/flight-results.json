@@ -1,0 +1,1994 @@
+[
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-23",
+    "return_date": "2026-04-25",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-23",
+    "return_date": "2026-04-26",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-24",
+    "return_date": "2026-04-25",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-24",
+    "return_date": "2026-04-26",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-30",
+    "return_date": "2026-05-02",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-04-30",
+    "return_date": "2026-05-03",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-01",
+    "return_date": "2026-05-02",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-01",
+    "return_date": "2026-05-03",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:05",
+      "arr_time": "11:00",
+      "flight_no": "MU 511",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-07",
+    "return_date": "2026-05-09",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-07",
+    "return_date": "2026-05-10",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-08",
+    "return_date": "2026-05-09",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-08",
+    "return_date": "2026-05-10",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-14",
+    "return_date": "2026-05-16",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-14",
+    "return_date": "2026-05-17",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-15",
+    "return_date": "2026-05-16",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-15",
+    "return_date": "2026-05-17",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-21",
+    "return_date": "2026-05-23",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-21",
+    "return_date": "2026-05-24",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-22",
+    "return_date": "2026-05-23",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-22",
+    "return_date": "2026-05-24",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-28",
+    "return_date": "2026-05-30",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-28",
+    "return_date": "2026-05-31",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-29",
+    "return_date": "2026-05-30",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-05-29",
+    "return_date": "2026-05-31",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-04",
+    "return_date": "2026-06-06",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-04",
+    "return_date": "2026-06-07",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-05",
+    "return_date": "2026-06-06",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-05",
+    "return_date": "2026-06-07",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-11",
+    "return_date": "2026-06-13",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-11",
+    "return_date": "2026-06-14",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-12",
+    "return_date": "2026-06-13",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-12",
+    "return_date": "2026-06-14",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-18",
+    "return_date": "2026-06-20",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-18",
+    "return_date": "2026-06-21",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-19",
+    "return_date": "2026-06-20",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-19",
+    "return_date": "2026-06-21",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-25",
+    "return_date": "2026-06-27",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-25",
+    "return_date": "2026-06-28",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-26",
+    "return_date": "2026-06-27",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-06-26",
+    "return_date": "2026-06-28",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-07-02",
+    "return_date": "2026-07-04",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-07-02",
+    "return_date": "2026-07-05",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-07-03",
+    "return_date": "2026-07-04",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "SHA",
+    "arr_airport": "GMP",
+    "depart_date": "2026-07-03",
+    "return_date": "2026-07-05",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "17:05",
+      "arr_time": "19:50",
+      "flight_no": "FM 823",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:00",
+      "arr_time": "12:55",
+      "flight_no": "MU 512"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-23",
+    "return_date": "2026-04-25",
+    "nights": 2,
+    "outbound": {
+      "price": 644.0,
+      "currency": "USD",
+      "dep_time": "11:10",
+      "arr_time": "14:20",
+      "flight_no": "KE 882",
+      "total_price": 644.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 644.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-23",
+    "return_date": "2026-04-26",
+    "nights": 3,
+    "outbound": {
+      "price": 406.0,
+      "currency": "USD",
+      "dep_time": "11:10",
+      "arr_time": "14:20",
+      "flight_no": "KE 882",
+      "total_price": 406.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 406.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-24",
+    "return_date": "2026-04-25",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "18:25",
+      "arr_time": "19:55",
+      "flight_no": "FM 828"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-24",
+    "return_date": "2026-04-26",
+    "nights": 2,
+    "outbound": {
+      "price": 664.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "11:55",
+      "flight_no": "MU 5041",
+      "total_price": 664.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 664.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-30",
+    "return_date": "2026-05-02",
+    "nights": 2,
+    "outbound": {
+      "price": 644.0,
+      "currency": "USD",
+      "dep_time": "11:40",
+      "arr_time": "14:30",
+      "flight_no": "OZ 362",
+      "total_price": 1288.0
+    },
+    "return": {
+      "price": 644.0,
+      "currency": "USD",
+      "dep_time": "14:00",
+      "arr_time": "15:00",
+      "flight_no": "OZ 365"
+    },
+    "total_price": 1288.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-04-30",
+    "return_date": "2026-05-03",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-01",
+    "return_date": "2026-05-02",
+    "nights": 1,
+    "outbound": {
+      "price": 644.0,
+      "currency": "USD",
+      "dep_time": "16:20",
+      "arr_time": "19:20",
+      "flight_no": "OZ 366",
+      "total_price": 1288.0
+    },
+    "return": {
+      "price": 644.0,
+      "currency": "USD",
+      "dep_time": "14:00",
+      "arr_time": "15:00",
+      "flight_no": "OZ 365"
+    },
+    "total_price": 1288.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-01",
+    "return_date": "2026-05-03",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-07",
+    "return_date": "2026-05-09",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-07",
+    "return_date": "2026-05-10",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-08",
+    "return_date": "2026-05-09",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-08",
+    "return_date": "2026-05-10",
+    "nights": 2,
+    "outbound": {
+      "price": 309.0,
+      "currency": "USD",
+      "dep_time": "11:40",
+      "arr_time": "14:30",
+      "flight_no": "OZ 362",
+      "total_price": 618.0
+    },
+    "return": {
+      "price": 309.0,
+      "currency": "USD",
+      "dep_time": "09:00",
+      "arr_time": "10:05",
+      "flight_no": "OZ 361"
+    },
+    "total_price": 618.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-14",
+    "return_date": "2026-05-16",
+    "nights": 2,
+    "outbound": {
+      "price": 362.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 362.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 362.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-14",
+    "return_date": "2026-05-17",
+    "nights": 3,
+    "outbound": {
+      "price": 391.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 391.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 391.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-22",
+    "return_date": "2026-05-24",
+    "nights": 2,
+    "outbound": {
+      "price": 478.0,
+      "currency": "USD",
+      "dep_time": "11:10",
+      "arr_time": "14:20",
+      "flight_no": "KE 882",
+      "total_price": 478.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 478.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-28",
+    "return_date": "2026-05-30",
+    "nights": 2,
+    "outbound": {
+      "price": 349.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 349.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 349.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-28",
+    "return_date": "2026-05-31",
+    "nights": 3,
+    "outbound": {
+      "price": 349.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 349.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 349.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-29",
+    "return_date": "2026-05-30",
+    "nights": 1,
+    "outbound": {
+      "price": 391.0,
+      "currency": "USD",
+      "dep_time": "13:40",
+      "arr_time": "16:45",
+      "flight_no": "KE 888",
+      "total_price": 391.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 391.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-05-29",
+    "return_date": "2026-05-31",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-04",
+    "return_date": "2026-06-06",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-04",
+    "return_date": "2026-06-07",
+    "nights": 3,
+    "outbound": {
+      "price": 290.0,
+      "currency": "USD",
+      "dep_time": "11:10",
+      "arr_time": "14:20",
+      "flight_no": "KE 882",
+      "total_price": 290.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 290.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-05",
+    "return_date": "2026-06-06",
+    "nights": 1,
+    "outbound": {
+      "price": 320.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 320.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 320.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-05",
+    "return_date": "2026-06-07",
+    "nights": 2,
+    "outbound": {
+      "price": 320.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 320.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 320.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-11",
+    "return_date": "2026-06-13",
+    "nights": 2,
+    "outbound": {
+      "price": 334.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 334.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 334.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-11",
+    "return_date": "2026-06-14",
+    "nights": 3,
+    "outbound": {
+      "price": 334.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 334.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 334.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-12",
+    "return_date": "2026-06-13",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-12",
+    "return_date": "2026-06-14",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-18",
+    "return_date": "2026-06-20",
+    "nights": 2,
+    "outbound": {
+      "price": 421.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 421.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 421.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-18",
+    "return_date": "2026-06-21",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-19",
+    "return_date": "2026-06-20",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-19",
+    "return_date": "2026-06-21",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-25",
+    "return_date": "2026-06-27",
+    "nights": 2,
+    "outbound": {
+      "price": 290.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 290.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "12:55",
+      "arr_time": "14:15",
+      "flight_no": "MU 5042"
+    },
+    "total_price": 290.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-25",
+    "return_date": "2026-06-28",
+    "nights": 3,
+    "outbound": {
+      "price": 277.0,
+      "currency": "USD",
+      "dep_time": "08:50",
+      "arr_time": "11:55",
+      "flight_no": "KE 892",
+      "total_price": 277.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 277.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-26",
+    "return_date": "2026-06-27",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-06-26",
+    "return_date": "2026-06-28",
+    "nights": 2,
+    "outbound": {
+      "price": 292.0,
+      "currency": "USD",
+      "dep_time": "11:10",
+      "arr_time": "14:20",
+      "flight_no": "KE 882",
+      "total_price": 292.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 292.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-07-02",
+    "return_date": "2026-07-04",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-07-02",
+    "return_date": "2026-07-05",
+    "nights": 3,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-07-03",
+    "return_date": "2026-07-04",
+    "nights": 1,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  },
+  {
+    "dep_airport": "PVG",
+    "arr_airport": "ICN",
+    "depart_date": "2026-07-03",
+    "return_date": "2026-07-05",
+    "nights": 2,
+    "outbound": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "14:35",
+      "arr_time": "17:25",
+      "flight_no": "FM 827",
+      "total_price": 0.0
+    },
+    "return": {
+      "price": 0.0,
+      "currency": "USD",
+      "dep_time": "08:55",
+      "arr_time": "10:00",
+      "flight_no": "MU 5052"
+    },
+    "total_price": 0.0,
+    "currency": "USD"
+  }
+]

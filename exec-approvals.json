@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/Users/georginalau/.openclaw/exec-approvals.sock",
+    "token": "3rd9NN70L0PD2gOlenJbjNh9JeSCVNth"
+  },
+  "defaults": {
+    "security": "full",
+    "ask": "off",
+    "askFallback": "full"
+  },
+  "agents": {}
+}

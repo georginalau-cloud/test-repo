@@ -1,0 +1,12 @@
+name: guanjia
+description: 管家 - 通用助手与协调者
+heartbeat:
+  enabled: true
+cron:
+  - name: 日记
+    schedule: "0 22 * * *"
+    description: 每天晚上22点写日记
+  - name: 机票监控
+    schedule: "0 9 * * *"
+    description: 每天早上9点监控机票价格
+

@@ -1,0 +1,21 @@
+name: jirou
+description: 肌肉 - 健身健康助手
+heartbeat:
+  enabled: false
+  intervalMinutes: 30
+cron:
+  - name: 早安体重
+    schedule: "0 8 * * *"
+    description: 早上8点记录体重
+  - name: 问午餐
+    schedule: "0 14 * * *"
+    description: 中午14点问午餐
+  - name: 问晚餐
+    schedule: "30 19 * * *"
+    description: 晚上19:30问晚餐
+  - name: 晚间体重
+    schedule: "0 22 * * *"
+    description: 晚上10点记录体重
+  - name: Garmin同步
+    schedule: "59 23 * * *"
+    description: 晚上11:59同步Garmin数据

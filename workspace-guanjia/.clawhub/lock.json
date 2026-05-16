@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "fliggy-flight-monitor": {
+      "version": "1.0.3",
+      "installedAt": 1775658113449
+    },
+    "wukong": {
+      "version": "1.0.0",
+      "installedAt": 1776671942195
+    },
+    "nox-grill-me": {
+      "version": "1.0.0",
+      "installedAt": 1777625763838
+    },
+    "self-verify": {
+      "version": "1.0.0",
+      "installedAt": 1778036919069
+    },
+    "minimax-image-understanding": {
+      "version": "1.0.0",
+      "installedAt": 1778076125449
+    }
+  }
+}

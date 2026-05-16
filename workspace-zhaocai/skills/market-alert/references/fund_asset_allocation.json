@@ -1,0 +1,110 @@
+{
+  "update_time": "2026-05-11",
+  "source": "https://fundf10.eastmoney.com/zcpz_{FUND_CODE}.html",
+  "funds": {
+    "006751": {
+      "name": "富国互联科技A",
+      "report_date": "2023-09-30",
+      "stock_ratio": 0.8983,
+      "bond_ratio": 0.0002,
+      "cash_ratio": 0.1025,
+      "fetched": true
+    },
+    "166002": {
+      "name": "中欧新蓝筹A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.7103,
+      "bond_ratio": 0.1161,
+      "cash_ratio": 0.16940000000000002,
+      "fetched": true
+    },
+    "163402": {
+      "name": "兴全趋势投资",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8920999999999999,
+      "bond_ratio": 0.023399999999999997,
+      "cash_ratio": 0.0906,
+      "fetched": true
+    },
+    "004477": {
+      "name": "嘉实沪港深回报",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8652,
+      "bond_ratio": 0.0169,
+      "cash_ratio": 0.096,
+      "fetched": true
+    },
+    "001371": {
+      "name": "富国沪港深价值精选A",
+      "report_date": "2023-12-31",
+      "stock_ratio": 0.7844,
+      "bond_ratio": 0.0005,
+      "cash_ratio": 0.1559,
+      "fetched": true
+    },
+    "166005": {
+      "name": "中欧价值发现A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8259000000000001,
+      "bond_ratio": 0.025,
+      "cash_ratio": 0.15039999999999998,
+      "fetched": true
+    },
+    "001668": {
+      "name": "汇添富全球移动互联A",
+      "report_date": "2019-12-31",
+      "stock_ratio": 0.6684,
+      "bond_ratio": 0.0003,
+      "cash_ratio": 0.09449999999999999,
+      "fetched": true
+    },
+    "000979": {
+      "name": "景顺长城沪港深精选A",
+      "report_date": "2025-12-31",
+      "stock_ratio": 0.8190000000000001,
+      "bond_ratio": 0.0006,
+      "cash_ratio": 0.1883,
+      "fetched": true
+    },
+    "118001": {
+      "name": "易方达亚洲精选",
+      "report_date": "2012-06-30",
+      "stock_ratio": 0.8320000000000001,
+      "bond_ratio": 0.0,
+      "cash_ratio": 0.07440000000000001,
+      "fetched": true
+    },
+    "004965": {
+      "name": "泓德致远混合A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.4719,
+      "bond_ratio": 0.2939,
+      "cash_ratio": 0.2369,
+      "fetched": true
+    },
+    "450009": {
+      "name": "国富中小盘A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8763,
+      "bond_ratio": 0.054400000000000004,
+      "cash_ratio": 0.0725,
+      "fetched": true
+    },
+    "519069": {
+      "name": "汇添富价值精选A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8539,
+      "bond_ratio": 0.04650000000000001,
+      "cash_ratio": 0.0712,
+      "fetched": true
+    },
+    "006113": {
+      "name": "汇添富创新医药A",
+      "report_date": "2026-03-31",
+      "stock_ratio": 0.8974,
+      "bond_ratio": 0.0,
+      "cash_ratio": 0.1097,
+      "fetched": true
+    }
+  }
+}

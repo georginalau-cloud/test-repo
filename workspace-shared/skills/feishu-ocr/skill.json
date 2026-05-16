@@ -1,0 +1,7 @@
+{
+  "name": "feishu-ocr",
+  "version": "1.0.0",
+  "description": "飞书 OCR 文字识别。使用飞书开放平台 API 识别图片或 PDF 中的文字，完全免费不限次数。",
+  "author": "guanjia",
+  "license": "MIT"
+}

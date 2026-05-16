@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+紫微斗数九宫格命盘输出
+用法：python3 bin/grid_ziwei --year 1990 --month 1 --day 8 --hour 14 --gender female
+"""
+
+import os, sys, json, argparse
+
+_SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(_SKILL_DIR, 'vendor'))
+from iztro_py import astro
+
+MAJOR_CN = {
+    'jumenMaj':'巨门','tiantongMaj':'天同','tianliangMaj':'天梁',
+    'tianfuMaj':'天府','taiyinMaj':'太阴','lianzhenMaj':'廉贞',
+    'tanlangMaj':'贪狼','ziweiMaj':'紫微','wuquMaj':'武曲',
+    'qishaMaj':'七杀','taiyangMaj':'太阳','tianjiMaj':'天机',
+    'pojunMaj':'破军','tianxiangMaj':'天相',
+}
+MINOR_CN = {
+    'zuofuMin':'左辅','youbiMin':'右弼','tiankuiMin':'天魁',
+    'tianyueMin':'天钺','wenquMin':'文曲','wenchangMin':'文昌',
+    'luquMin':'禄存','qingyangMin':'青羊','huoxingMin':'火星',
+    'lingxingMin':'铃星','tuoluoMin':'陀罗','dijieMin':'地劫',
+    'tianmaMin':'天马','lucunMin':'禄存','dikongMin':'地空',
+}
+ADJ_CN = {
+    'xianchi':'咸池','jieshen':'解神','tiankong':'天空',
+    'bazuo':'芭蕉','enguang':'恩光','feilian':'飞廉',
+    'fenggao':'风羔','fengge':'凤阁','guasu':'挂索',
+    'guchen':'孤辰','hongluan':'红鸾','huagai':'华盖',
+    'jielu':'劫路','kongwang':'空亡','longchi':'龙池',
+    'nianjie':'年解','posui':'破岁','santai':'三台',
+    'taifu':'台辅','tiancai':'天才','tianchu':'天厨',
+    'tiande':'天德','tianfuAdj':'天福','tianguan':'天关',
+    'tiangui':'天贵','tianku':'天苦','tianshou':'天寿',
+    'tianwu':'天武','tianxi':'天熙','tianxing':'天星',
+    'tianxu':'天虚','tianyao':'天姚','yinsha':'寅煞',
+    'yuede':'月德','xunkong':'旬空',
+    'tianshang':'天上',  # 补
+    'tianshi':'天使',      # 补
+}
+
+IDX_NAME = ['财帛','子女','夫妻','兄弟','命宫','父母','身宫','田宅','官禄','交友','迁移','疾厄']
+
+def scn(n): return MAJOR_CN.get(n) or MINOR_CN.get(n) or ADJ_CN.get(n) or n
+
+def hour_idx(h):
+    t=[(0,0,0),(1,2,1),(3,4,2),(5,6,3),(7,8,4),(9,10,5),(11,12,6),(13,14,7),(15,16,8),(17,18,9),(19,20,10),(21,22,11),(23,23,12)]
+    for a,b,i in t:
+        if a<=h<=b: return i
+    return 0
+
+def calc_gua_male(y):
+    s=(y%100)//10+(y%100)%10
+    while s>9: s=s//10+s%10
+    return 10-s
+
+def calc_gua_female(y):
+    s=(y%100)//10+(y%100)%10
+    while s>9: s=s//10+s%10
+    r=5+s
+    while r>9: r-=9
+    return r
+
+def stars_fmt(p):
+    d=p.model_dump()
+    maj=[scn(s['name']) for s in d.get('major_stars',[])]
+    mnr=[scn(s['name']) for s in d.get('minor_stars',[])]
+    adj=[scn(s['name']) for s in d.get('adjective_stars',[])]
+    r=','.join(maj) if maj else '空'
+    if mnr: r+='+'+','.join(mnr)
+    if adj: r+='['+','.join(adj)+']'
+    return r
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--year',required=True,type=int)
+    ap.add_argument('--month',required=True,type=int)
+    ap.add_argument('--day',required=True,type=int)
+    ap.add_argument('--hour',required=True,type=int)
+    ap.add_argument('--minute',default=0,type=int)
+    ap.add_argument('--gender',required=True,choices=['male','female'])
+    ap.add_argument('--city',default='')
+    ap.add_argument('--mode',default='full')
+    args=ap.parse_args()
+    gc='男' if args.gender=='male' else '女'
+    ti=hour_idx(args.hour)
+    chart=astro.by_solar(f'{args.year}-{args.month}-{args.day}',ti,gc)
+    mg=calc_gua_male(args.year) if args.gender=='male' else calc_gua_female(args.year)
+    gmap={1:'坎',2:'坤',3:'震',4:'巽',5:'坤',6:'乾',7:'兑',8:'艮',9:'离'}
+    gtype={'坎':'东四命','离':'东四命','震':'东四命','巽':'东四命','乾':'西四命','坤':'西四命','艮':'西四命','兑':'西四命'}
+    gn=gmap.get(mg,'?')
+
+    print(f"{chart.chinese_date} {gc}命  {chart.time}  {chart.five_elements_class}")
+    print(f"命卦：{gn}宫（{gtype[gn]}）")
+    print()
+
+    # 九宫格排布 [迁移,交友,官禄] / [田宅,身宫,兄弟] / [疾厄,命宫,夫妻]
+    layout=[[10,9,8],[7,6,3],[11,4,2]]
+    labels=[['迁移宫','交友宫','官禄宫'],['田宅宫','身宫','兄弟宫'],['疾厄宫','命宫','夫妻宫']]
+
+    for row_i, row in enumerate(layout):
+        line1 = f"       【{labels[row_i][0]}】          【{labels[row_i][1]}】        【{labels[row_i][2]}】"
+        print(line1)
+        cells = []
+        for idx in row:
+            content = stars_fmt(chart.palaces[idx])
+            cells.append(content)
+        print(f"      {cells[0]:<18}   {cells[1]:<18}   {cells[2]}")
+        print()
+
+    # 父母宫单独标
+    d5=chart.palaces[5].model_dump()
+    p5_maj=[scn(s['name']) for s in d5.get('major_stars',[])]
+    p5_mnr=[scn(s['name']) for s in d5.get('minor_stars',[])]
+    p5_str=','.join(p5_maj) if p5_maj else '空'
+    if p5_mnr: p5_str+='+'+','.join(p5_mnr)
+    print(f"                         【父母宫】")
+    print(f"                      父母宫 {p5_str}")
+    print()
+    print(f"五行局：{chart.five_elements_class}  生肖：{chart.zodiac}  星座：{chart.sign}")
+
+if __name__=='__main__':
+    main()

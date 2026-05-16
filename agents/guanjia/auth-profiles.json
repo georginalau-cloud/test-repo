@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "profiles": {
+    "minimax:default": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "${MINIMAX_API_KEY}"
+    },
+    "deepseek:default": {
+      "type": "api_key",
+      "provider": "deepseek",
+      "key": "${DEEPSEEK_API_KEY}"
+    },
+    "google": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "${GOOGLE_API_KEY}"
+    }
+  },
+  "lastGood": {
+    "minimax": "minimax:default",
+    "deepseek": "deepseek:default"
+  },
+  "usageStats": {
+    "minimax:default": {
+      "errorCount": 0,
+      "lastUsed": 1774929438001
+    },
+    "deepseek:default": {
+      "errorCount": 0,
+      "lastUsed": 0
+    }
+  }
+}

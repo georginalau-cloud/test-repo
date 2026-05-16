@@ -1,0 +1,14 @@
+name: zhaocai
+description: 招财 - 股票投资助手
+heartbeat:
+  enabled: true
+cron:
+  - name: 晨报
+    schedule: "0 9 * * 1-5"
+    description: 早上9点获取新闻和市场动态，给出投资建议
+  - name: 盘中监控
+    schedule: "0 10,11,13,14 * * 1-5"
+    description: 整点获取实时行情和新闻
+  - name: 收盘总结
+    schedule: "0 15 * * 1-5"
+    description: 下午3点收盘分析

@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "timestamp": "2026-05-16T10:17:00",
+  "date": "2026-05-16",
+  "time_of_day": "morning",
+  "weight_kg": 58.4,
+  "body_fat_percent": 27.1,
+  "muscle_rate_percent": 68.6,
+  "visceral_fat": 5,
+  "bmr_kcal": 1290,
+  "water_percent": 51.6,
+  "protein_percent": 17.0,
+  "bone_mass_kg": 2.5,
+  "muscle_level": "标准",
+  "muscle_storage_grade": "3.0",
+  "bmi": 21.7,
+  "body_age": 37,
+  "raw_ocr": "有品秤 2026-05-16 10:17"
+}

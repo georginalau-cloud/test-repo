@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "characteristic-voice": {
+      "source": "NoizAI/skills",
+      "sourceType": "github",
+      "skillPath": "skills/characteristic-voice/SKILL.md",
+      "computedHash": "519d6d8a92069eb9e05385a2902762457459981940f78d2ac679959c87749d0e"
+    },
+    "tts": {
+      "source": "NoizAI/skills",
+      "sourceType": "github",
+      "skillPath": "skills/tts/SKILL.md",
+      "computedHash": "ccfb890d9f797a1316ca9d6528f9c240bc0a287a2c0cb09758b41d8a8a0e18df"
+    }
+  }
+}
